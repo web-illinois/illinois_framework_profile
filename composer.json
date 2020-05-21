@@ -1,0 +1,96 @@
+{
+    "name": "atlas-web/illinois-framework",
+    "type": "drupal-profile",
+    "description": "",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "ext-dom": "*",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/core": "^8.8.6"
+    },
+    "require-dev": {
+        "drupal/core-composer-scaffold": "*",
+        "drupal/core-dev": "*",
+        "drush/drush": ">=9.7",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "vijaycs85/drupal-quality-checker": "^1.2",
+        "weitzman/drupal-test-traits": "dev-master",
+        "zaporylie/composer-drupal-optimizations": "^1.1"
+    },
+    "config": {
+        "preferred-install": {
+            "drupal/core": "dist"
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "public_html/"
+            },
+            "file-mapping": {
+                "[project-root]/.gitattributes": false,
+                "[project-root]/.editorconfig": false,
+                "[web-root]/example.gitignore": false,
+                "[web-root]/.csslintrc": false,
+                "[web-root]/modules/README.txt": false,
+                "[web-root]/profiles/README.txt": false,
+                "[web-root]/sites/README.txt": false,
+                "[web-root]/themes/README.txt": false,
+                "[web-root]/INSTALL.txt": false,
+                "[web-root]/robots.txt": false,
+                "[web-root]/web.config": false
+            }
+        },
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "public_html/core": [
+                "type:drupal-core"
+            ],
+            "public_html/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "public_html/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "public_html/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "public_html/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ]
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/core": {
+                "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
+                "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-11-05/1356276-531-8.8.x-4.patch",
+                "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
+            }
+        }
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
