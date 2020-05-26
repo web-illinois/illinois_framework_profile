@@ -6,13 +6,13 @@
     "require": {
         "ext-dom": "*",
         "cweagans/composer-patches": "^1.6",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8.6",
+        "drush/drush": "^10.2"
     },
     "require-dev": {
-        "drupal/core-composer-scaffold": "^8.8",
+        "drupal/core-composer-scaffold": "*",
         "drupal/core-dev": "*",
         "drupal/console": "^1.9",
-        "drush/drush": "^10.2",
         "oomphinc/composer-installers-extender": "^1.1",
         "vijaycs85/drupal-quality-checker": "^1.2",
         "weitzman/drupal-test-traits": "dev-master",
@@ -26,7 +26,7 @@
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "public_html/"
+                "web-root": "docroot/"
             },
             "file-mapping": {
                 "[project-root]/.gitattributes": false,
@@ -44,21 +44,21 @@
         },
         "enable-patching": true,
         "installer-paths": {
-            "public_html/core": [
+            "docroot/core": [
                 "type:drupal-core"
             ],
-            "public_html/libraries/{$name}": [
+            "docroot/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
             ],
-            "public_html/modules/contrib/{$name}": [
+            "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "public_html/profiles/contrib/{$name}": [
+            "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "public_html/themes/contrib/{$name}": [
+            "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
         },
