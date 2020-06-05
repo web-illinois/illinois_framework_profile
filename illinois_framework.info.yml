@@ -1,0 +1,45 @@
+name: 'Illinois Framework'
+core_version_requirement: '^8.8'
+type: profile
+description: 'A Drupal distribution tailored for the University of Illinois.'
+install:
+  - admin_toolbar
+  - automated_cron
+  - block_content
+  - breakpoint
+  - ckeditor
+  - config
+  - conflict
+  - contextual
+  - menu_link_content
+  - datetime
+  - quickedit
+  - editor
+  - entity_block
+  - help
+  - history
+  - imagick
+  - menu_ui
+  - node
+  - options
+  - path
+  - pathauto
+  - page_cache
+  - redirect
+  - taxonomy
+  - text
+  - dblog
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - diff
+  - image_widget_crop
+  - metatag
+  - illinois_framework_core
+themes:
+  - illinois_framework_theme
+  - claro

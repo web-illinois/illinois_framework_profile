@@ -6,8 +6,9 @@
     "require": {
         "ext-dom": "*",
         "atlas-web/illinois-framework-core": "dev-master",
+        "atlas-web/illinois-framework-theme": "dev-master",
         "cweagans/composer-patches": "^1.6",
-        "drupal/core-recommended": "^8.8",
+        "drupal/core-recommended": "^8.9.0",
         "drush/drush": "^10.2"
     },
     "require-dev": {
