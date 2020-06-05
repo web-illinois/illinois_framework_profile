@@ -5,8 +5,9 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
+        "atlas-web/illinois-framework-core": "dev-master",
         "cweagans/composer-patches": "^1.6",
-        "drupal/core-recommended": "^8.8.6",
+        "drupal/core-recommended": "^8.8",
         "drush/drush": "^10.2"
     },
     "require-dev": {
@@ -21,7 +22,8 @@
     "config": {
         "preferred-install": {
             "drupal/core": "dist"
-        }
+        },
+        "sort-packages": true
     },
     "extra": {
         "drupal-scaffold": {
@@ -81,6 +83,10 @@
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "atlas-web": {
+            "type": "composer",
+            "url": "https://fwpackages.web.illinois.edu"
         },
         "assets": {
             "type": "composer",
