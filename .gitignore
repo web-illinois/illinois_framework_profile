@@ -1,6 +1,6 @@
 .DS_Store
 bin/
-public_html/
+docroot/
 vendor/
 node_modules/
 bower_components/
