@@ -17,6 +17,7 @@ install:
   - help
   - history
   - imagick
+  - media
   - menu_ui
   - node
   - options
@@ -38,6 +39,8 @@ install:
   - image_widget_crop
   - metatag
   - illinois_framework_core
+  - workflows
+  - responsive_image
 themes:
   - illinois_framework_theme
   - claro
