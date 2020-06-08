@@ -7,6 +7,7 @@
 
 use Drupal\user\RoleInterface;
 use Drupal\user\UserInterface;
+use Drupal\shortcut\Entity\Shortcut;
 
 /**
  * Implements hook_install_tasks().
