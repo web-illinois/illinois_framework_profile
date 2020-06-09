@@ -1,7 +1,11 @@
-name: 'Illinois Framework'
+name: Illinois Framework
 core_version_requirement: '^8.8'
 type: profile
-description: 'A Drupal distribution tailored for the University of Illinois.'
+description: A Drupal distribution tailored for the University of Illinois.
+
+distribution:
+  name: Illinois Framework
+
 install:
   - admin_toolbar_tools
   - admin_toolbar_links_access_filter
