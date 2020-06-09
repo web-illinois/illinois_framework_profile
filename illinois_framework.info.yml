@@ -36,6 +36,7 @@ install:
   - views
   - views_ui
   - diff
+  - search
   - image_widget_crop
   - metatag
   - illinois_framework_core
