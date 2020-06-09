@@ -20,6 +20,7 @@ install:
   - editor
   - ctools_entity_mask
   - entity_reference_revisions
+  - entity_usage
   - field_ui
   - file
   - help
