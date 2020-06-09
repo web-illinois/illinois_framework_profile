@@ -59,6 +59,6 @@ install:
   - weight
   - workflows
   - illinois_framework_core
-  themes:
+themes:
   - illinois_framework_theme
   - claro
