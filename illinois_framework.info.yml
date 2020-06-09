@@ -24,7 +24,6 @@ install:
   - file
   - help
   - history
-  - illinois_framework_core
   - image_widget_crop
   - imagick
   - inline_form_errors
@@ -59,6 +58,7 @@ install:
   - views_ui
   - weight
   - workflows
-themes:
+  - illinois_framework_core
+  themes:
   - illinois_framework_theme
   - claro
