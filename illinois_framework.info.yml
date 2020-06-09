@@ -3,45 +3,62 @@ core_version_requirement: '^8.8'
 type: profile
 description: 'A Drupal distribution tailored for the University of Illinois.'
 install:
-  - admin_toolbar
+  - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_search
   - automated_cron
   - block_content
   - breakpoint
   - ckeditor
   - config
   - contextual
-  - menu_link_content
   - datetime
-  - quickedit
-  - editor
-  - help
-  - history
-  - imagick
-  - media
-  - menu_ui
-  - node
-  - options
-  - path
-  - pathauto
-  - page_cache
-  - redirect
-  - taxonomy
-  - text
+  - datetime_range
   - dblog
-  - shortcut
-  - toolbar
+  - diff
+  - dynamic_page_cache
+  - editor
+  - ctools_entity_mask
+  - entity_reference_revisions
   - field_ui
   - file
+  - help
+  - history
+  - illinois_framework_core
+  - image_widget_crop
+  - imagick
+  - inline_form_errors
+  - layout_builder
+  - layout_discovery
+  - media
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - module_filter
+  - node
+  - options
+  - page_cache
+  - paragraphs
+  - paragraphs_library
+  - paragraphs_type_permissions
+  - path
+  - pathauto
+  - pathologic
+  - quickedit
   - rdf
+  - redirect
+  - responsive_image
+  - search
+  - shortcut
+  - taxonomy
+  - telephone
+  - text
+  - toolbar
   - views
   - views_ui
-  - diff
-  - search
-  - image_widget_crop
-  - metatag
-  - illinois_framework_core
+  - weight
   - workflows
-  - responsive_image
 themes:
   - illinois_framework_theme
   - claro
