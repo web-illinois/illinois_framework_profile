@@ -39,7 +39,6 @@ install:
   - menu_link_content
   - menu_ui
   - metatag
-  - module_filter
   - node
   - options
   - page_cache
@@ -61,7 +60,6 @@ install:
   - toolbar
   - views
   - views_ui
-  - weight
   - workflows
   - illinois_framework_core
 themes:
