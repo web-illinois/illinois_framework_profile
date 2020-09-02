@@ -1,12 +1,12 @@
 {
-    "name": "atlas-web/illinois-framework",
+    "name": "web-illinois/illinois-framework-profile",
     "type": "drupal-profile",
     "description": "",
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
-        "atlas-web/illinois-framework-core": "dev-master",
-        "atlas-web/illinois-framework-theme": "dev-master",
+        "web-illinois/illinois-framework-core": "dev-master",
+        "web-illinois/illinois-framework-theme": "dev-master",
         "cweagans/composer-patches": "^1.6",
         "drupal/bootstrap4": "^2.1",
         "drupal/console": "^1.9",
@@ -86,7 +86,7 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "atlas-web": {
+        "web-illinois": {
             "type": "composer",
             "url": "https://fwpackages.web.illinois.edu"
         },
