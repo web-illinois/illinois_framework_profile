@@ -1,12 +1,12 @@
 {
-    "name": "web-illinois/illinois-framework-profile",
+    "name": "web-illinois/illinois_framework_profile",
     "type": "drupal-profile",
     "description": "",
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
-        "web-illinois/illinois-framework-core": "dev-master",
-        "web-illinois/illinois-framework-theme": "dev-master",
+        "web-illinois/illinois_framework_core": "dev-master",
+        "web-illinois/illinois_framework_theme": "dev-master",
         "cweagans/composer-patches": "^1.6",
         "drupal/bootstrap4": "^2.1",
         "drupal/console": "^1.9",
