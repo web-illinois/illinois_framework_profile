@@ -7,19 +7,15 @@
         "ext-dom": "*",
         "web-illinois/illinois_framework_core": "dev-master",
         "web-illinois/illinois_framework_theme": "dev-master",
-        "cweagans/composer-patches": "^1.6",
+        "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap4": "^2.1",
-        "drupal/console": "^1.9",
         "drupal/core-recommended": "^8.9.0",
         "drush/drush": "^10.2"
     },
     "require-dev": {
         "drupal/core-composer-scaffold": "*",
         "drupal/core-dev": "*",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "vijaycs85/drupal-quality-checker": "^1.2",
-        "weitzman/drupal-test-traits": "dev-master",
-        "zaporylie/composer-drupal-optimizations": "^1.1"
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "config": {
         "preferred-install": {
@@ -86,9 +82,13 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "web-illinois": {
-            "type": "composer",
-            "url": "https://fwpackages.web.illinois.edu"
+        "web-illinois-core": {
+            "type": "vcs",
+            "url": "https://github.com/web-illinois/illinois_framework_core.git"
+        },
+        "web-illinois-theme": {
+            "type": "vcs",
+            "url": "https://github.com/web-illinois/illinois_framework_theme.git"
         },
         "assets": {
             "type": "composer",
