@@ -11,6 +11,13 @@ install:
   - admin_toolbar_links_access_filter
   - admin_toolbar_search
   - automated_cron
+  - bamboo_twig
+  - bamboo_twig_config
+  - bamboo_twig_file
+  - bamboo_twig_loader
+  - bamboo_twig_path
+  - bamboo_twig_security
+  - bamboo_twig_token
   - block_content
   - breakpoint
   - ckeditor
@@ -54,10 +61,13 @@ install:
   - responsive_image
   - search
   - shortcut
+  - tb_megamenu
   - taxonomy
   - telephone
   - text
   - toolbar
+  - twig_field_value
+  - twig_tweak
   - views
   - views_ui
   - workflows
@@ -65,4 +75,5 @@ install:
 themes:
   - bootstrap4
   - illinois_framework_theme
+  - seven
   - claro
