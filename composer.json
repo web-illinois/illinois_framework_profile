@@ -6,7 +6,7 @@
     "require": {
         "ext-dom": "*",
         "web-illinois/illinois_framework_core": "dev-master",
-        "web-illinois/illinois_framework_theme": "dev-master",
+        "web-illinois/illinois_framework_theme": "dev-dev",
         "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap4": "^2.1",
         "drupal/core-recommended": "^8.9.0",
