@@ -75,5 +75,4 @@ install:
 themes:
   - bootstrap4
   - illinois_framework_theme
-  - seven
   - claro
