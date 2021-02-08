@@ -106,7 +106,7 @@ function illinois_framework_set_default_theme() {
   Drupal::configFactory()
     ->getEditable('system.theme')
     ->set('default', 'illinois_framework_theme')
-    ->set('admin', 'seven')
+    ->set('admin', 'claro')
     ->save(TRUE);
 
   // Use the admin theme for creating content.
