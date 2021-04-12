@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
-        "web-illinois/illinois_framework_core": "dev-master",
+        "web-illinois/illinois_framework_core": "1.x-dev",
         "web-illinois/illinois_framework_theme": "1.x-dev",
         "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap4": "^2.1",
