@@ -8,7 +8,7 @@
         "web-illinois/illinois_framework_core": "1.x-dev",
         "web-illinois/illinois_framework_theme": "1.x-dev",
         "cweagans/composer-patches": "^1.7",
-        "drupal/bootstrap4": "^2.1",
+        "drupal/bootstrap4": "2.1.5",
         "drupal/core-recommended": "^8.9.0",
         "drush/drush": "^10.2"
     },
