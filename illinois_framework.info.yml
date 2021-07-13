@@ -58,6 +58,7 @@ install:
   - rdf
   - redirect
   - responsive_image
+  - scss_compiler
   - search
   - shortcut
   - tb_megamenu
