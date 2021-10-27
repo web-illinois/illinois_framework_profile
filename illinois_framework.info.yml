@@ -22,6 +22,7 @@ install:
   - breakpoint
   - ckeditor
   - config
+  - config_sync
   - contextual
   - datetime
   - datetime_range
