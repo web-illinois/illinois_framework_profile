@@ -6,7 +6,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+  default_config_hash: D0fzjck8aVhUSkHVEKQ0_JgUO7PY9RyD2HnTVMP-F38
 format: basic_html
 editor: ckeditor
 settings:
@@ -18,6 +18,8 @@ settings:
           items:
             - Bold
             - Italic
+            - Subscript
+            - Superscript
         -
           name: Linking
           items:
@@ -33,19 +35,27 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - DrupalMediaLibrary
         -
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
+            - Table
             - Source
+        -
+          name: 'Paste Text'
+          items:
+            - PasteText
+            - PasteFromWord
   plugins:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: "a.il-button|Base Button\r\na.il-button.il-white-blue|White with blue button\r\na.il-button.il-white-orange|White with orange button\r\na.il-button.il-blue|Solid blue button\r\na.il-button.il-orange|Solid orange button"
 image_upload:
   status: true
   scheme: public
