@@ -10,6 +10,7 @@ install:
   - admin_toolbar_tools
   - admin_toolbar_links_access_filter
   - admin_toolbar_search
+  - anchor_link
   - automated_cron
   - bamboo_twig
   - bamboo_twig_config
