@@ -20,6 +20,7 @@ install:
   - bamboo_twig_security
   - bamboo_twig_token
   - block_content
+  - block_exclude_pages
   - breakpoint
   - ckeditor
   - config
