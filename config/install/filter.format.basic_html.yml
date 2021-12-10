@@ -4,10 +4,9 @@ dependencies:
   module:
     - blazy
     - editor
+    - linkit
     - media
     - pathologic
-_core:
-  default_config_hash: x2d8l_RKu_awy0rh3wDuMY--2-uztlyqyJOyjQHprvc
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -18,7 +17,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang class name> <em> <strong> <cite> <blockquote cite> <code> <ul type class> <ol start type class><li class> <dl class><dt class><dd class><h2 id class> <h3 id class><h4 id class><h5 id class><h6 id class> <p class><br> <img src alt data-entity-type data-entity-uuid data-align data-caption height width class> <sup> <sub> <hr> <table class role aria-label> <caption> <tbody> <thead> <tfoot class> <th id class> <td id class> <tr id class> <q class><address class><div class><span id class> <drupal-media alt data-align data-caption data-view-mode data-entity-uuid data-entity-type>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type class=""> <ol type start class=""> <li class=""> <dl class=""> <dt class=""> <dd class=""> <h2 id class=""> <h3 id class=""> <h4 id class=""> <h5 id class=""> <h6 id class=""> <p class=""> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption width height class=""> <sup> <sub> <hr> <table role aria-label class=""> <caption> <tbody> <thead> <tfoot class=""> <th id class=""> <td id class=""> <tr id class=""> <q class=""> <address class=""> <div class=""> <span id class=""> <drupal-media alt data-align data-caption data-view-mode data-entity-uuid data-entity-type title> <a href hreflang name data-entity-substitution data-entity-type data-entity-uuid title class=" il-button il-white-blue il-white-orange il-blue il-orange">'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -103,3 +102,10 @@ filters:
       box_style: ''
       box_caption: ''
       use_data_uri: '0'
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
