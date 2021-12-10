@@ -1,3 +1,4 @@
+uuid: 465315e3-daab-4f7b-87ed-1d302314b468
 langcode: en
 status: true
 dependencies:
@@ -5,7 +6,8 @@ dependencies:
     - filter.format.basic_html
   module:
     - ckeditor
-    - anchor_link
+_core:
+  default_config_hash: RA4lRQTuRe-PHG5-ECRkP-updI13l_Tlpkm-gRC-bbo
 format: basic_html
 editor: ckeditor
 settings:
@@ -52,6 +54,9 @@ settings:
             - PasteText
             - PasteFromWord
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
     stylescombo:
       styles: "a.il-button|Base Button\r\na.il-button.il-white-blue|White with blue button\r\na.il-button.il-white-orange|White with orange button\r\na.il-button.il-blue|Solid blue button\r\na.il-button.il-orange|Solid orange button"
     language:

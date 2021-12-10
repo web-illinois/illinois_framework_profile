@@ -1,3 +1,4 @@
+uuid: 9200bbf4-0c08-4401-b9dc-deb759713431
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
     - linkit
     - media
     - pathologic
+_core:
+  default_config_hash: qR9P02Dx8GNJRvkeJuEKOZwCoE6nYzIEzu6GAaPLXQA
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -76,8 +79,8 @@ filters:
     weight: -40
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
+      allowed_media_types: {  }
   filter_pathologic:
     id: filter_pathologic
     provider: pathologic
@@ -94,13 +97,13 @@ filters:
     status: false
     weight: 3
     settings:
-      filter_tags:
-        img: img
-        iframe: iframe
       media_switch: ''
       hybrid_style: ''
       box_style: ''
       box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
       use_data_uri: '0'
   linkit:
     id: linkit
