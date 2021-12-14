@@ -44,6 +44,8 @@ install:
   - inline_form_errors
   - layout_builder
   - layout_discovery
+  - linkit
+  - linkit_media_library
   - media
   - media_library
   - menu_block
