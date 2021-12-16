@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
   module:
     - ckeditor
+    - linkit_media_library
 _core:
   default_config_hash: RA4lRQTuRe-PHG5-ECRkP-updI13l_Tlpkm-gRC-bbo
 format: basic_html

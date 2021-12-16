@@ -6,6 +6,7 @@ dependencies:
     - blazy
     - editor
     - linkit
+    - linkit_media_library
     - media
     - pathologic
 _core:
