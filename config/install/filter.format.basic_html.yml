@@ -1,4 +1,3 @@
-uuid: 9200bbf4-0c08-4401-b9dc-deb759713431
 langcode: en
 status: true
 dependencies:
@@ -6,11 +5,9 @@ dependencies:
     - blazy
     - editor
     - linkit
-    - linkit_media_library
     - media
     - pathologic
-_core:
-  default_config_hash: qR9P02Dx8GNJRvkeJuEKOZwCoE6nYzIEzu6GAaPLXQA
+    - slick
 name: 'Basic HTML'
 format: basic_html
 weight: 0
@@ -98,14 +95,14 @@ filters:
     status: false
     weight: 3
     settings:
-      media_switch: ''
-      hybrid_style: ''
-      box_style: ''
-      box_caption: ''
       filter_tags:
         img: img
         iframe: iframe
+      media_switch: ''
+      box_style: ''
+      hybrid_style: ''
       use_data_uri: '0'
+      box_caption: ''
   linkit:
     id: linkit
     provider: linkit
@@ -113,3 +110,11 @@ filters:
     weight: 0
     settings:
       title: true
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''
