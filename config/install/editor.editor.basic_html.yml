@@ -4,7 +4,6 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
-    - ckeditor
 format: basic_html
 editor: ckeditor
 settings:
@@ -33,7 +32,6 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
             - video_embed
             - DrupalMediaLibrary
         -
