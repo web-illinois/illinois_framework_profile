@@ -67,7 +67,6 @@ install:
   - scss_compiler
   - search
   - shortcut
-  - slick_views
   - tb_megamenu
   - taxonomy
   - telephone
