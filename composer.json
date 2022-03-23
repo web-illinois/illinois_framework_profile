@@ -9,6 +9,8 @@
         "web-illinois/illinois_framework_theme": "2.x-dev",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-recommended": "^9.2",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drush/drush": "^10.2"
     },
     "require-dev": {
@@ -20,7 +22,7 @@
         "preferred-install": {
             "drupal/core": "dist"
         },
-        "sort-packages": true
+        "sort-packages": false
     },
     "extra": {
         "drupal-scaffold": {
