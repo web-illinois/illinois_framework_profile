@@ -37,6 +37,7 @@ install:
   - entity_usage
   - field_ui
   - file
+  - gin_toolbar
   - help
   - history
   - image_widget_crop
@@ -82,3 +83,4 @@ themes:
   - bootstrap4
   - illinois_framework_theme
   - claro
+  - gin

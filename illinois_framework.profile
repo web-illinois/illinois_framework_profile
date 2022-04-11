@@ -106,7 +106,7 @@ function illinois_framework_set_default_theme() {
   Drupal::configFactory()
     ->getEditable('system.theme')
     ->set('default', 'illinois_framework_theme')
-    ->set('admin', 'claro')
+    ->set('admin', 'gin')
     ->save(TRUE);
 
   // Use the admin theme for creating content.
@@ -138,4 +138,19 @@ function illinois_framework_set_logo() {
       'use_default' => FALSE,
     ])
     ->save(TRUE);
+}
+
+/**
+ * Set the default admin theme to gin
+ */
+function illinois_framework_update_9002() {
+  // Install and set the admin theme to gin
+  \Drupal::service('theme_installer')->install(['gin']);
+  Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('admin', 'gin')
+    ->save(TRUE);
+
+  // Install the gin_toolbar module
+  \Drupal::service('module_installer')->install(['gin_toolbar']);
 }
