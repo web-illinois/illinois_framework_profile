@@ -154,3 +154,10 @@ function illinois_framework_update_9002() {
   // Install the gin_toolbar module
   \Drupal::service('module_installer')->install(['gin_toolbar']);
 }
+
+/**
+ * Enable the bootstrap5 theme as part of the 3.0 release of the ILFW
+ */
+function illinois_framework_update_9003() {
+  \Drupal::service('theme_installer')->install(['bootstrap5']);
+}
