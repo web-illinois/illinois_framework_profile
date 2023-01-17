@@ -11,7 +11,7 @@
         "drupal/core-recommended": "^9.2",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
-        "drush/drush": "^10.2"
+        "drush/drush": "^11.0"
     },
     "require-dev": {
         "drupal/core-composer-scaffold": "*",
