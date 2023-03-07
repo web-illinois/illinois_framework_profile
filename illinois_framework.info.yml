@@ -80,7 +80,6 @@ install:
   - workflows
   - illinois_framework_core
 themes:
-  - bootstrap4
   - illinois_framework_theme
   - claro
   - gin
