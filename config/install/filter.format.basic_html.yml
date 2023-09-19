@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.full
   module:
     - editor
     - linkit
@@ -17,7 +19,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type class=""> <ol type start class=""> <li class=""> <dl class=""> <dt class=""> <dd class=""> <h2 id class=""> <h3 id class=""> <h4 id class=""> <h5 id class=""> <h6 id class=""> <p class=""> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption width height class=""> <sup> <sub> <hr> <table role aria-label class=""> <caption> <tbody> <thead> <tfoot class=""> <th id class=""> <td id class=""> <tr id class=""> <q class=""> <address class=""> <div class=""> <span id class=""> <drupal-media alt data-align data-caption data-view-mode data-entity-uuid data-entity-type title> <a href hreflang name data-entity-substitution data-entity-type data-entity-uuid title class=" il-button il-white-blue il-white-orange il-blue il-orange">'
+      allowed_html: '<br> <p class> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <a class="il-button il-white-blue il-white-orange il-blue il-orange" hreflang name title href data-entity-type data-entity-uuid data-entity-substitution> <cite> <dl class> <dt class> <dd class> <img src alt data-entity-type data-entity-uuid data-align data-caption width height class> <q class> <address class> <div class> <span id class> <blockquote cite> <ul type class> <ol type class start> <li class> <table role aria-label class> <tfoot class> <th id class rowspan colspan> <td id class rowspan colspan> <tr id class> <drupal-media title data-entity-type data-entity-uuid alt data-view-mode data-caption data-align> <strong> <em> <code> <sub> <sup> <hr> <thead> <tbody> <caption>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -76,7 +78,9 @@ filters:
     weight: -41
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        default: default
+        full: full
       allowed_media_types: {  }
   filter_pathologic:
     id: filter_pathologic
@@ -98,6 +102,12 @@ filters:
   video_embed_wysiwyg:
     id: video_embed_wysiwyg
     provider: video_embed_wysiwyg
-    status: true
+    status: false
     weight: -48
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: -42
     settings: {  }

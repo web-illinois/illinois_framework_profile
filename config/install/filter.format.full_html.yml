@@ -39,18 +39,18 @@ filters:
     status: false
     weight: -45
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      allowed_html: ''
       filter_html_help: true
       filter_html_nofollow: false
   media_embed:
     id: media_embed
     provider: media
-    status: false
+    status: true
     weight: -40
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
+      allowed_media_types: {  }
   filter_autop:
     id: filter_autop
     provider: filter
@@ -86,3 +86,9 @@ filters:
       local_settings:
         protocol_style: full
         local_paths: ''
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }

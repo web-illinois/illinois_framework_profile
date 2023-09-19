@@ -4,66 +4,94 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
+    - ckeditor5
 format: basic_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Subscript
-            - Superscript
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-            - Anchor
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - video_embed
-            - DrupalMediaLibrary
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-            - Styles
-        -
-          name: Tools
-          items:
-            - Table
-            - Source
-        -
-          name: 'Paste Text'
-          items:
-            - PasteText
-            - PasteFromWord
+    items:
+      - bold
+      - italic
+      - subscript
+      - superscript
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalMedia
+      - '|'
+      - heading
+      - style
+      - '|'
+      - insertTable
+      - sourceEditing
+      - '|'
+      - code
+      - horizontalLine
   plugins:
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl class>'
+        - '<dt class>'
+        - '<dd class>'
+        - '<img src alt data-entity-type data-entity-uuid data-align data-caption width height class>'
+        - '<q class>'
+        - '<address class>'
+        - '<div class>'
+        - '<span id class>'
+        - '<blockquote cite>'
+        - '<ul type class>'
+        - '<ol type class>'
+        - '<li class>'
+        - '<h2 id class>'
+        - '<h3 id class>'
+        - '<h4 id class>'
+        - '<h5 id class>'
+        - '<h6 id class>'
+        - '<p class>'
+        - '<table role aria-label class>'
+        - '<tfoot class>'
+        - '<th id class>'
+        - '<td id class>'
+        - '<tr id class>'
+        - '<drupal-media title>'
+        - '<a hreflang name title>'
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Base Button'
+          element: '<a class="il-button">'
+        -
+          label: 'White with blue button'
+          element: '<a class="il-button il-white-blue">'
+        -
+          label: 'White with orange button'
+          element: '<a class="il-button il-white-orange">'
+        -
+          label: 'Solid blue button'
+          element: '<a class="il-button il-blue">'
+        -
+          label: 'Solid orange button'
+          element: '<a class="il-button il-orange">'
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: default
-    stylescombo:
-      styles: "a.il-button|Base Button\r\na.il-button.il-white-blue|White with blue button\r\na.il-button.il-white-orange|White with orange button\r\na.il-button.il-blue|Solid blue button\r\na.il-button.il-orange|Solid orange button"
-    language:
-      language_list: un
-    video_embed:
-      defaults:
-        children:
-          autoplay: false
-          responsive: true
-          width: '854'
-          height: '480'
+    media_media:
+      allow_view_mode_override: true
 image_upload:
   status: true
   scheme: public
