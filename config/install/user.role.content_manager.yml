@@ -1,6 +1,20 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contextual
+    - file
+    - filter
+    - media
+    - node
+    - paragraphs
+    - path
+    - quickedit
+    - redirect
+    - search
+    - system
+    - taxonomy
+    - toolbar
 id: content_manager
 label: 'Content Manager'
 weight: 3
@@ -20,8 +34,16 @@ permissions:
   - 'administer redirects'
   - 'administer taxonomy'
   - 'bypass node access'
+  - 'create media'
   - 'create url aliases'
+  - 'delete any media'
+  - 'delete media'
+  - 'update any media'
+  - 'update media'
   - 'use advanced search'
   - 'use text format basic_html'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view own unpublished media'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
