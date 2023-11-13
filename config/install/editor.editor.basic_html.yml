@@ -31,6 +31,7 @@ settings:
       - '|'
       - code
       - horizontalLine
+      - videoEmbed
   plugins:
     ckeditor5_heading:
       enabled_headings:
@@ -92,6 +93,13 @@ settings:
       linkit_profile: default
     media_media:
       allow_view_mode_override: true
+    video_embed_wysiwyg_video_embed:
+      defaults:
+        children:
+          autoplay: false
+          responsive: true
+          width: '42'
+          height: '42'
 image_upload:
   status: true
   scheme: public
