@@ -5,13 +5,13 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
-        "web-illinois/illinois_framework_core": "3.x-dev",
-        "web-illinois/illinois_framework_theme": "3.x-dev",
+        "web-illinois/illinois_framework_core": "dev-d10upgrade",
+        "web-illinois/illinois_framework_theme": "dev-d10upgrade",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-recommended": "^9.2",
+        "drupal/core-recommended": "^10",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
-        "drush/drush": "^11.0"
+        "drush/drush": "^12"
     },
     "require-dev": {
         "drupal/core-composer-scaffold": "*",
@@ -71,9 +71,6 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/core": {
-                "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch"
-            }
         }
     },
     "repositories": {

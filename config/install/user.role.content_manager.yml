@@ -1,6 +1,21 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - contextual
+    - file
+    - filter
+    - media
+    - node
+    - paragraphs
+    - path
+    - redirect
+    - search
+    - system
+    - taxonomy
+    - toolbar
 id: content_manager
 label: 'Content Manager'
 weight: 3
@@ -10,7 +25,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
-  - 'access in-place editing'
   - 'access media overview'
   - 'access taxonomy overview'
   - 'access toolbar'
@@ -21,6 +35,7 @@ permissions:
   - 'administer taxonomy'
   - 'bypass node access'
   - 'create url aliases'
+  - 'delete own files'
   - 'use advanced search'
   - 'use text format basic_html'
   - 'view the administration theme'
