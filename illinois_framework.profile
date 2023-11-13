@@ -122,7 +122,7 @@ function illinois_framework_set_default_theme() {
  * Set the path to the logo, favicon and README file based on install directory.
  */
 function illinois_framework_set_logo() {
-  $illinois_framework_path = drupal_get_path('profile', 'illinois_framework');
+  $illinois_framework_path = \Drupal::service('extension.list.profile')->getPath('illinois_framework');
 
   Drupal::configFactory()
     ->getEditable('system.theme.global')
