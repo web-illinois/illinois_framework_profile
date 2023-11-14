@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
     - contextual
     - file
@@ -9,7 +11,6 @@ dependencies:
     - node
     - paragraphs
     - path
-    - quickedit
     - redirect
     - search
     - system
@@ -24,7 +25,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
-  - 'access in-place editing'
   - 'access media overview'
   - 'access taxonomy overview'
   - 'access toolbar'
