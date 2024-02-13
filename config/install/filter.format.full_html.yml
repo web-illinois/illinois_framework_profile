@@ -54,7 +54,7 @@ filters:
   filter_autop:
     id: filter_autop
     provider: filter
-    status: true
+    status: false
     weight: -50
     settings: {  }
   filter_html_escape:
