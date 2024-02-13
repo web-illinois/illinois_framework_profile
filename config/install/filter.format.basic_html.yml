@@ -47,7 +47,7 @@ filters:
   filter_autop:
     id: filter_autop
     provider: filter
-    status: true
+    status: false
     weight: -49
     settings: {  }
   filter_htmlcorrector:
