@@ -9,8 +9,8 @@
         "web-illinois/illinois_framework_theme": "4.x-dev",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-recommended": "^10.1",
-        "drupal/gin": "^3.0@rc",
-        "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/gin": "^4",
+        "drupal/gin_toolbar": "^2",
         "drush/drush": "^11.0 || ^12.0"
     },
     "require-dev": {
@@ -22,7 +22,17 @@
         "preferred-install": {
             "drupal/core": "dist"
         },
-        "sort-packages": false
+        "sort-packages": false,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "php-http/discovery": true,
+            "composer/installers": true,
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
