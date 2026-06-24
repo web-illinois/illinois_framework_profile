@@ -72,6 +72,7 @@ install:
   - telephone
   - text
   - toolbar
+  - trash
   - twig_field_value
   - twig_tweak
   - views
