@@ -72,6 +72,7 @@ install:
   - taxonomy
   - telephone
   - text
+  - trash
   - toolbar
   - twig_field_value
   - twig_tweak

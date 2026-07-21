@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - trash
+id: trash
+label: Trash Administrator
+weight: 4
+is_admin: null
+permissions:
+  - 'access trash'
+  - 'administer trash'
+  - 'purge menu_link_content entities'
+  - 'purge node entities'
+  - 'purge path_alias entities'
+  - 'restore menu_link_content entities'
+  - 'restore node entities'
+  - 'restore path_alias entities'
