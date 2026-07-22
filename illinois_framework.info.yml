@@ -2,7 +2,6 @@ name: Illinois Framework
 core_version_requirement: ^9 || ^10
 type: profile
 description: A Drupal distribution tailored for the University of Illinois.
-version: '5.x-dev'
 
 distribution:
   name: Illinois Framework
@@ -82,3 +81,8 @@ install:
 themes:
   - illinois_framework_theme
   - gin
+
+# Information added by web-illinois packaging script on 2026-07-22
+version: '5.2.0'
+project: 'illinois_framework'
+datestamp: 1784751116
