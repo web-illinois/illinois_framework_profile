@@ -1,0 +1,9 @@
+name: Drupal Core Search Settings
+description: Sets good settings for core search.
+type: 'content_search'
+config:
+  actions:
+    search.page.help_search:
+      disable: []
+    search.page.user_search:
+      disable: []
