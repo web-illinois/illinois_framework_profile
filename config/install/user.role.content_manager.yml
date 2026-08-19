@@ -16,6 +16,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - trash
 id: content_manager
 label: 'Content Manager'
 weight: 3
