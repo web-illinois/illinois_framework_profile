@@ -8,8 +8,8 @@
         "web-illinois/illinois_framework_core": "6.x-dev",
         "web-illinois/illinois_framework_theme": "6.x-dev",
         "drupal/core-recommended": "^11",
-        "drupal/gin": "^4.0",
-        "drupal/gin_toolbar": "^2.0",
+        "drupal/gin": "^5.0",
+        "drupal/gin_toolbar": "^3.0",
         "drush/drush": "^13.0 || ^14.0"
     },
     "require-dev": {
