@@ -42,7 +42,6 @@ install:
   - focal_point
   - gin_toolbar
   - help
-  - history
   - image_widget_crop
   - imagick
   - inline_form_errors
