@@ -5,8 +5,8 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "ext-dom": "*",
-        "web-illinois/illinois_framework_core": "6.x-dev",
-        "web-illinois/illinois_framework_theme": "6.x-dev",
+        "web-illinois/illinois_framework_core": "~6.0.0",
+        "web-illinois/illinois_framework_theme": "~6.0.0",
         "drupal/core-recommended": "^11",
         "drupal/gin": "^5.0",
         "drupal/gin_toolbar": "^3.0",
