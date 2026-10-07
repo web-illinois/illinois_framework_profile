@@ -25,10 +25,10 @@ The default set of content types included are:
 - News
 - Blog
 - Spotlight
-- Highlighted courses
-- Award/Award Winner
 
-The framework also makes use of [Paragraphs](https://www.drupal.org/project/paragraphs) for page layout and customization.
+Examples of the content types can be seen on the [Illinois Drupal Framework website](https://drupal.webtheme.illinois.edu/content-types).
+
+The framework also makes use of [Paragraphs](https://www.drupal.org/project/paragraphs) for page layout and customization. Please visit the [Illinois Drupal Framework website](https://drupal.webtheme.illinois.edu/paragraphs) for a list of paragraphs that come with the framework.
 
 ### Included Contrib Modules
 
